@@ -11,5 +11,9 @@ test.describe(`Salesforce login - GitHub Actions`,async()=>{
         
         const appLauncherLocator = page.locator(".slds-icon-waffle")
 
+        await appLauncherLocator.click()
+
+        const viewAllLocator = page.getByLabel("View All Applications")
+        await viewAllLocator.click()
     })
 })
